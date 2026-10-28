@@ -21,7 +21,7 @@ Proyecto de Propietas Inmobiliaria. Hereda de `../CLAUDE.md`: datos de la firma,
 - **Assets:** `assets/logos/` (color, blanco, 1 tinta blanco, negro, símbolo) y `assets/img/foto-01..22.jpeg`. No referenciar `../_shared`.
 - **Fotos:** 22 originales de la ficha, ~1,9 MB en total. 17 verticales de 720×1280 y 5 horizontales (02 fachada, 06 patio, 14 patio, 17 patio/galería, 19 patio). El orden de los archivos NO es el de la galería original. Fotos de celular, unidad vacía; resolución baja para un hero a pantalla completa en escritorio.
 - **Lo que se ve en las fotos (confirmado por el usuario o visible):** unidad en planta baja con frente enrejado; patio de uso exclusivo con césped y pérgola; pared de ladrillo visto; pisos símil cerámico; cocina con cocina a gas y campana; baño; calefactor a gas. Sin muebles.
-- **Deploy:** PENDIENTE — publicar solo con confirmación del usuario
+- **Deploy:** Vercel, proyecto `juan-jose-valle-375` (cuenta lisandropradas-projects), conectado a https://github.com/lisandroprada/JuanJoseValle375 (rama `main`, deploy automático). Dominio: https://juanjosevalle375.ipropietas.com.ar (DNS externo en darkbit.com.ar; CNAME `juanjosevalle375` → `d70165f04a0ca710.vercel-dns-017.com.`). Alias Vercel: https://juan-jose-valle-375.vercel.app
 
 ## Estado
 - Sitio construido y revisado en escritorio y en celular (390 px, sin desborde). Movimiento: apertura del patio y título por líneas al cargar, parallax del hero y apertura de la foto del patio con `animation-timeline` (solo Chrome/Edge/Safari recientes; en otros queda estático), reveals al scroll, botón fijo en celular y galería con progreso. Todo respeta `prefers-reduced-motion`.
@@ -31,7 +31,7 @@ Proyecto de Propietas Inmobiliaria. Hereda de `../CLAUDE.md`: datos de la firma,
 - `PRODUCT.md` (impeccable init) y `DESIGN.md` (cuando exista) son la fuente de verdad visual y de producto.
 
 ## Pendientes
-- `og:image` y `og:url` con URL absoluta cuando haya dominio (hoy `assets/img/og.jpg`, relativa)
+- Verificar que el CNAME esté cargado en el DNS y el certificado emitido
 - Probar en celular real (iOS Safari) antes de publicar
 - Depósito y comisión: no están en la página hasta tener las condiciones
 - Descripción comercial del inmueble (la ficha no la tiene) y qué ambientes/estado muestra cada foto
